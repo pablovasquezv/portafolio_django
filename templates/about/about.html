@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- About section -->
+
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="¿Quién Soy?">Sobre Mí</h3>
+        </div>
+
+        <div class="section-body grid-2">
+          <div class="column-1">
+            <h3 class="title-sm">Hola, soy Juan Pablo Vásquez</h3>
+            <p class="text">
+              Un apasionado de las aplicaciones móviles y desarrollador web Full Stack versátil que puede asumir
+              diferentes roles en el desarrollo de aplicaciones desde la implementación de la interfaz de usuario
+              hasta la configuración del servidor y la gestión de la base de datos. <br> Soy capaz de trabajar de
+              forma independiente o en equipo, y poseo conocimiento integral que permite contribuir en todas las
+              etapas del ciclo de vida de un proyecto web. Con una Experiencia en la creación de aplicaciones móviles
+              y web.
+            </p>
+            <div class="skills">
+              <div class="skill Flutter">
+                <h3 class="skill-title">VueJs</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="98%"></div>
+                </div>
+              </div>
+              <div class="skill ReactJS">
+                <h3 class="skill-title">ReactJS</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="89%"></div>
+                </div>
+              </div>
+              <div class="skill NodeJS">
+                <h3 class="skill-title">AWS</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="70%"></div>
+                </div>
+              </div>
+              <div class="skill WordPress">
+                <h3 class="skill-title">WordPress</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="93%"></div>
+                </div>
+              </div>
+              <div class="skill Firebase">
+                <h3 class="skill-title">SprintBoot</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column-2 image">
+            <img src="{% static 'img/shapes/points4.png' %}" class="points" alt="" />
+            <img src="{% static 'img/yo.jpeg' %}" id="imagen" class="z-index" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
