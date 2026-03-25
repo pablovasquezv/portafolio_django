@@ -1,7 +1,30 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
+ 
+      <!-- Main section  -->
 
-  
+      <div class="header-content">
+        <div class="container grid-2">
+          <div class="column-1">
+            <h1 class="header-title">Juan Pablo</h1>
+            <div class="text">
+              <p class="lead">Hola, soy Juan Pablo Vásquez, FullStack Developer y Android/iOS .</p>
+              <div class="small-asc">
+                VueJs, ReactJS, JavaScript, Wordpress/Woocommerce,
+                || Oracle, MySQL, PostgreSQL, AWS EC2, etc.
+              </div>
+            </div>
+            <a href="./img/Curriculum_Juan_Pablo_Vásquez.pdf" target="_blank" class="btn">Descarga CV</a>
+          </div>
+
+          <div class="column-2 image">
+            <img src="{% static 'img/shapes/points2.png' %}" class="points points2" alt="points rawquesh" />
+            <img src="{% static 'img/yo.jpeg' %}" class="img-element z-index" id="imagen" lt="main logo rawquesh" />
+          </div>
+        </div>
+      </div>
+    </header>
 
 {% endblock %}

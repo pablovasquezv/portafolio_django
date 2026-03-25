@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+   <!-- portfolio section -->
+
+    <!-- portfolio section -->
+
+    <section class="portfolio section" id="portfolio">
+      <div class="background-bg">
+        <div class="overlay overlay-sm">
+          <img src="{% static 'img/shapes/half-circle.png png' %}" class="shape half-circle1" alt="" />
+          <img src="{% static 'img/shapes/half-circle.png png' %}" class="shape half-circle2" alt="" />
+          <img src="{% static 'img/shapes/square.png png' %}" class="shape square" alt="" />
+          <img src="{% static 'img/shapes/wave.png png' %}" class="shape wave" alt="" />
+          <img src="{% static 'img/shapes/circle.png png' %}" class="shape circle" alt="" />
+          <img src="{% static 'img/shapes/triangle.png png' %}" class="shape triangle" alt="" />
+          <img src="{% static 'img/shapes/x.png png' %}" class="shape xshape" alt="" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Mis Proyectos">Portafolio</h3>
+        </div>
+
+        <div class="section-body">
+          <div class="filter">
+            <button class="filter-btn active" data-filter="*">Todo</button>
+            <button class="filter-btn" data-filter=".appdev">
+              Mobile App
+            </button>
+            <button class="filter-btn" data-filter=".webdev">Web App</button>
+            <button class="filter-btn" data-filter=".wordpress">
+              WordPress
+            </button>
+            <!-- <button class="filter-btn" data-filter=".wordpress">
+                NodeJS
+              </button> -->
+          </div>
+
+          <div class="grid">
+            <a target="_blank" href="https://apps.apple.com/au/app/luminous-beauty-supply/id1556612136">
+              <div class="grid-item appdev">
+                <div class="gallery-image">
+                  <img src="{% static 'img/portfolio/shopping-app.png' %}" alt="Shopping App" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Shopping App</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a target="_blank" href="about:black">
+              <div class="grid-item appdev">
+                <div class="gallery-image">
+                  <img src="{% static 'img/portfolio/online-store.png' %}" alt="Online Store" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Online Store</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a target="_blank" href="https://www.covemin.cl/quienes-somos#quienes-somos">
+              <div class="grid-item wordpress">
+                <div class="gallery-image">
+                  <img src="{% static 'img/portfolio/kaufman.png' %}" alt="kaufman" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>kaufman</h3>
+                      <p class="card-text">
+                        Kaufmann desarrollo de sitio web automotriz para sus marcas representadas como Mercedes-Benz, Freightliner y Fuso.
+                      </p>
+                      <h5>View Demo</h5>+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a target="_blank" href="https://ww2.banchileinversiones.cl">
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img id="image" src="{% static 'img/portfolio/banchileInversiones.png' %}" alt="Appointment Booking App" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Fondos Mutuos</h3>
+                      <p class="card-text">Servicio que administra las operaciones sobre <b>Fondos Mutuos</b> para
+                        el ingreso de operaciones.</p>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a target="_blank" href="https://ww2.banchileinversiones.cl">
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img src="{% static 'img/portfolio/banchileInversiones.png' %}" alt="Moneda Extranjera" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Moneda Extranjera</h3>
+                      <p class="card-text">Servicio que administra las operaciones sobre <b>Moneda Extranjera</b>
+                        para el ingreso de operaciones.</p>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a target="_blank" href="https://ww2.banchileinversiones.cl">
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img src="{% static 'img/portfolio/banchileInversiones.png' %}" alt="Moneda Extranjera" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Acciones</h3>
+                      <p class="card-text">Servicio que administra las operaciones sobre <b>Acciones</b> para el
+                        ingreso de operaciones.</p>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+        
+            <a href="https://play.google.com/store/apps/details?id=com.memebaaz.MemeBaaz" target="_blank">
+              <div class="grid-item ui appdev">
+                <div class="gallery-image">
+                  <img src="{% static 'img/portfolio/media-sharing.png' %}" alt="Media Sharing app" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Media Sharing app</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}

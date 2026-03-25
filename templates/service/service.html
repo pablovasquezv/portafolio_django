@@ -1,0 +1,109 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Services section  -->
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Mi área de especialización">Servicios</h3>
+          <p class="text">
+            Los servicios que puedo brindar como desarrollador a su empresa o
+            negocio.
+          </p>
+        </div>
+
+        <div class="cards">
+          <div class="card-wrap">
+            <img src="{% static 'img/shapes/points3.png' %}" class="points points1 points-sq" alt="points square rawquesh" />
+            <div class="card" data-card="Web">
+              <div class="card-content z-index">
+                <img src="{% static 'img/services/web.png' %}" class="icon" alt="web development showcase rawquesh" />
+                <h3 class="title-sm">Desarrollo Web</h3>
+                <p class="text">
+                  Ayudar a las empresas emergentes, las pequeñas empresas y las agencias a lograr
+                  Sitios web de alta calidad y experiencia de usuario excepcional.
+                </p>
+                <a href="mailto:vasquezsoftwaresolutions@gmail.com" class="btn small">Contactame</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrap">
+            <div class="card" data-card="App">
+              <div class="card-content z-index">
+                <img src="{% static 'img/services/android.png' %}" class="icon" alt="android development showcase rawquesh" />
+                <h3 class="title-sm">Android App</h3>
+                <p class="text">
+                  Puedo crear varios tipos de aplicaciones de Android para tus necesidades.
+                  como aplicaciones de redes sociales, tiendas en línea, aplicaciones de compras y
+                  sistemas de pago.
+                </p>
+                <a href="mailto:vasquezsoftwaresolutions@gmail.com" class="btn small">Contactame</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card" data-card="iOS">
+              <div class="card-content z-index">
+                <img src="{% static 'img/services/ios.png' %}" class="icon" alt="ios development showcase rawquesh" />
+                <h3 class="title-sm">iOS App</h3>
+                <p class="text">
+                  Puedo construir para iPhones y iPads, un diseño de múltiples tamaños para dispositivos, excelente
+                  ajuste. Diseño UX/UI intuitivo. UI compleja para aplicaciones de iOS que involucran diseños
+                  personalizados.
+                </p>
+                <a href="mailto:vasquezsoftwaresolutions@gmail.com" class="btn small">Contactame</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card" data-card="WP">
+              <div class="card-content z-index">
+                <img src="{% static 'img/services/wordpress.png' %}" class="icon" alt="wordpress showcase rawquesh" />
+                <h3 class="title-sm">WordPress</h3>
+                <p class="text">
+                  Soy especialista en diseño responsive WordPress, front-end
+                  desarrollo, compilaciones personalizadas de WordPress/Elementor y
+                  WooCommerce.
+                </p>
+                <a href="mailto:vasquezsoftwaresolutions@gmail.com" class="btn small">Contactame</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card" data-card="Store">
+              <div class="card-content z-index">
+                <img src="{% static 'img/services/online-store100.png' %}" class="icon" alt="online store showcase rawquesh" />
+                <h3 class="title-sm">Online Store</h3>
+                <p class="text">
+                  Puedo construir tu tienda online con las últimas tecnologías.
+                  como WordPress/WooCommerce, React y VueJs.
+                </p>
+                <a href="mailto:vasquezsoftwaresolutions@gmail.com" class="btn small">Contactame</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrap">
+            <img src="{% static 'img/shapes/points3.png' %}" class="points points2 points-sq" alt="" />
+            <div class="card" data-card="DB">
+              <div class="card-content z-index">
+                <img src="{% static 'img/services/database.png' %}"  class="icon" alt="database Backend showcase rawquesh" />
+                <h3 class="title-sm">Database/Backend</h3>
+                <p class="text">
+                  Puedo trabajar con Java SprintBoot para crear REST-API,
+                  Oracle y PostgreSQL para base de datos.
+                </p>
+                <a href="mailto:vasquezsoftwaresolutions@gmail.com" class="btn small">Contactame</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+{% endblock %}

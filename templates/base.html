@@ -20,7 +20,7 @@
 <body>
   <main>
     <header id="header">
-          <div class="overlay overlay-lg">
+        <div class="overlay overlay-lg">
         <img src="{% static 'img/shapes/square.png' %}" class="shape square" alt="square shape rawquesh" />
         <img src="{% static 'img/shapes/circle.png' %}" class="shape circle" alt="circle shape rawquesh" />
         <img src="{% static 'img/shapes/half-circle.png' %}" class="shape half-circle1" alt="half circle shape rawquesh" />
@@ -40,9 +40,9 @@
 
           <div class="links">
             <ul>
-              <li><a href="{% url 'home' %}#header">Home</a></li>
-              <li><a href="{% url 'home' %}#services">Services</a></li>
-              <li><a href="{% url 'home' %}#portfolio">Portfolio</a></li>
+              <li><a href="{% url 'inicio' %}">Home</a></li>
+              <li><a href="{% url 'service' %}" >Services</a></li>
+              <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
               <li><a href="{% url 'home' %}#about">Sobre mi</a></li>
               <li><a href="{% url 'home' %}#testimonials">Testimonios</a></li>
               <li><a href="{% url 'home' %}#contact">Contacto</a></li>
@@ -55,31 +55,6 @@
           </div>
         </div>
       </nav>
-
-      
-      <!-- Main section  -->
-
-      <div class="header-content">
-        <div class="container grid-2">
-          <div class="column-1">
-            <h1 class="header-title">Juan Pablo</h1>
-            <div class="text">
-              <p class="lead">Hola, soy Juan Pablo Vásquez, FullStack Developer y Android/iOS .</p>
-              <div class="small-asc">
-                VueJs, ReactJS, JavaScript, Wordpress/Woocommerce,
-                || Oracle, MySQL, PostgreSQL, AWS EC2, etc.
-              </div>
-            </div>
-            <a href="./img/Curriculum_Juan_Pablo_Vásquez.pdf" target="_blank" class="btn">Descarga CV</a>
-          </div>
-
-          <div class="column-2 image">
-            <img src="{% static 'img/shapes/points2.png' %}" class="points points2" alt="points rawquesh" />
-            <img src="{% static 'img/yo.jpeg' %}" class="img-element z-index" id="imagen" lt="main logo rawquesh" />
-          </div>
-        </div>
-      </div>
-    </header>
 
     {% block content %}
     {% endblock %}
@@ -102,10 +77,10 @@
           <h3 class="title-sm">Links</h3>
           <ul>
             <li>
-              <a href="#services">Servicios</a>
+              <a href="{% url 'service' %}" >Servicios</a>
             </li>
             <li>
-              <a href="#portfolio">Portafolio</a>
+              <a  href="{% url 'portfolio' %}" >Portafolio</a>
             </li>
             <li>
               <a href="#about">Sobre mi</a>
@@ -157,7 +132,7 @@
       <div class="bottom-footer">
         <div class="copyright">
           <p class="text">
-            Derechos Reservados <b>Juan Pablo Vásquez</b> Copyright&copy;2023</p>
+            Derechos Reservados <b>Juan Pablo Vásquez</b> Copyright&copy;2026</p>
         </div>
 
         <div class="followme-wrap">
@@ -194,7 +169,7 @@
   <script src="{% static '/js/isotope.pkgd.min.js' %}"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="{% static 'js//js/app.js' %}"></script>
+  <script src="{% static 'js/app.js' %}"></script>
   {% block extra_js %}
   {% endblock %}
 
