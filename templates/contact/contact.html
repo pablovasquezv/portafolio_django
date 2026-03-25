@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<style>
+  .contact:before {
+    background-image: url("{% static 'img/map.png' %}");
+  }
+  .contact:after {
+    background-image: url("{% static 'img/contact-bg.png' %}");
+  }
+</style>
+{% endblock %}
+{% block content %}
+   <!-- Contact -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <h3 class="title">Establecer Contacto</h3>
+            <p class="text">
+              Contactame o envime un mensaje en cualquier momento, hablamos.
+            </p>
+            <div class="information-wrap">
+              <div class="information">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <p class="info-text">Temuco, Chile</p>
+              </div>
+
+              <div class="information">
+                <div class="contact-icon">
+                  <i class="fas fa-paper-plane"></i>
+                </div>
+                <p class="info-text">vasquezsoftwaresolutions@gmail.com</p>
+              </div>
+
+              <div class="information">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <p class="info-text">+56976695206</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form form action="https://formsubmit.co/fbe30d8ad08199aa18d939301659dec5 " method="POST">
+              <h3 class="title">Contactame</h3>
+              <div class="row">
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_subject" value="Contact" />
+
+                <input class="contact-input" placeholder="Nombres" type="text" name="fname" required />
+                <input type="text" class="contact-input" placeholder="Apellidos" name="lname" required />
+              </div>
+
+              <div class="row">
+                <input type="text" class="contact-input" placeholder="Celular" name="phone" required />
+                <input type="email" class="contact-input" placeholder="Email" name="email" required />
+              </div>
+
+              <div class="row">
+                <textarea class="contact-input textarea" placeholder="Message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn"><b>Enviar</b></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}

@@ -29,13 +29,13 @@
         <img src="{% static 'img/shapes/wave.png' %}" class="shape wave wave1" alt="wave shape rawquesh" />
         <img src="{% static 'img/shapes/wave.png' %}" class="shape wave wave2" alt="wave shape rawquesh" />
         <img src="{% static 'img/shapes/triangle.png' %}" class="shape triangle" alt="triangle shape rawquesh" />
-        <img src="{% static 'img/shapes/letters.png' %}" class="letters" alt="letters rawquesh" />
+        
         <img src="{% static 'img/shapes/points1.png' %}" class="points points1" alt="points rawquesh" />
       </div>
       <nav>
         <div class="container">
           <div class="logo">
-            <img src="{% static 'img/logo.png' %}" alt="Logo" />
+            <img src="{% static 'img/fevicon.png' %}" id="imagen" alt="Logo" />
           </div>
 
           <div class="links">
@@ -45,7 +45,7 @@
               <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
               <li><a href="{% url 'about' %}">Sobre mi</a></li>
               <li><a href="{% url 'testimonials' %}">Testimonios</a></li>
-              <li><a href="{% url 'home' %}#contact">Contacto</a></li>
+              <li><a href="{% url 'contact' %}">Contacto</a></li>
               <li><a href="mailto:vasquezsoftwaresolutions@gmail.com" class="active">Contactame</a></li>
             </ul>
           </div>
@@ -89,7 +89,7 @@
               <a href="{% url 'testimonials' %}"> Testimonios</a>
             </li>
             <li>
-              <a href="#contact">Contacto</a>
+              <a href="{% url 'testimonials' %}">Contacto</a>
             </li>
           </ul>
         </div>

@@ -254,7 +254,14 @@ header {
 nav {
   width: 100%;
   position: relative;
-  z-index: 50;
+  position: fixed; /* Hace que el nav no se mueva de su posición en pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el menú siempre esté POR ENCIMA de las imágenes y formas */
+  background-color: #fff; /* O el color de tu fondo, para que no sea transparente al bajar */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Opcional: una sombra sutil para dar profundidad */
+  transition: 0.3s; /* Para que si agregas cambios con JS se vea fluido */
 }
 
 nav .container {
@@ -992,6 +999,9 @@ header .circle {
   position: relative;
   width: 100%;
   padding: 13.5rem 0 8.5rem;
+  /* Añade esto para crear un nuevo contexto de apilamiento */
+  z-index: 1; 
+  overflow: hidden; 
 }
 
 .contact:before,
@@ -999,20 +1009,31 @@ header .circle {
   content: "";
   position: absolute;
   width: 100%;
-  z-index: -1;
+  /* Cambiamos el z-index a uno negativo pero controlado */
+  z-index: -1; 
   left: 0;
+  /* Asegúrate de que no haya filtros que la oculten */
+  opacity: 1;
+  visibility: visible;
 }
 
 .contact:before {
   top: 0;
   height: 40%;
-  background: url("../img/map.png") center;
+  /* 1. Aseguramos que no se repita */
+  /* 2. 'center' para que se mantenga en medio */
+  /* 3. 'cover' para que se estire a todo el ancho y alto del 40% */
+  background: url("../img/map.png") no-repeat center / cover;
+  
+  /* Opcional: Si el mapa se ve muy estirado, usa 'contain' en lugar de 'cover' 
+     y añade un color de fondo para que no queden huecos blancos */
+  /* background: #f9f9f9 url("../img/map.png") no-repeat center / contain; */
 }
 
 .contact:after {
   top: 40%;
   height: 60%;
-  background: url("../img/contact-bg.png") center bottom / cover;
+  background: url("../img/contact-bg.png") no-repeat center bottom / cover;
 }
 
 .contact-box {
