@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Testimonials -->
+
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Lo que dice los Clientes">Testimonios</h3>
+        </div>
+
+        <div class="testi-content grid-2">
+          <div class="column-1 reviews">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Gran experiencia trabajando con Juan Pablo Vásquez. Él es
+                    Detallista, flexible y trabajador. Su
+                    La comunicación es excelente. Recomiendo trabajar
+                    con él para cualquiera de sus necesidades de desarrollo web/móvil.
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Mágico Carella</h3>
+                    <h5 class="review-job">Líder Técnico, Banchile Inversiones</h5>
+                    <a href="https://www.linkedin.com/in/mcarellaz/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+
+                  <div class="column-2 image">
+                    <img src="{% static 'img/magico.jfif'%}" class="img-element z-index" id="imagen" lt="main logo rawquesh" />
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Juan Pablo Vásquez y su equipo hicieron un trabajo excelente. Yo sinceramente
+                    Apreciamos la capacidad de respuesta y el talento de diseño que tienen.
+                    aplicado a este proyecto. Trabajaré con ellos nuevamente y
+                    Recomiendo ampliamente sus servicios.
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Juan Sobarzo</h3>
+                    <h5 class="review-job">Líder Técnico Everis Center</h5>
+                    <a href="https://www.linkedin.com/in/juan-sobarzo-colimil-77173918b/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="column-2 image">
+                    <img src="{% static 'img/juan.jfif'%}" class="img-element z-index" id="imagen" lt="main logo rawquesh" />
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Juan Pablo Vásquez hizo un muy buen trabajo al realizar los cambios para el
+                    aplicación de factura y esperamos con ansias la próxima actualización
+                    en la aplicación también. muchas gracias de nuevo.
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Zarina Fuentes Covarrubias</h3>
+                    <h5 class="review-job">Scrum Master Instituto De Seguridad Laboral</h5>
+                    <a href="https://www.linkedin.com/in/zarina-fuentes-covarrubias/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="column-2 image">
+                    <img src="{% static 'img/zarina_fuentes.jfif'%}" class="img-element z-index" id="imagen" lt="main logo rawquesh" />
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-text">
+                    Excelente comunicación, muy fácil trabajar con el, se aseguró de que todos
+                    los errores habían sido solucionados. Definitivamente contrateré a Juan Pablo Vásquez
+                    de nuevo
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">GIANINNA REYES</h3>
+                    <h5 class="review-job">Lider Técnico Instituto De Seguridad Laboral </h5>
+                    <a href="https://www.linkedin.com/in/gianinnareyes/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <div class="column-2 image">
+                    <img src="{% static 'img/gianinna.jfif '%}" class="img-element z-index" id="imagen" lt="main logo rawquesh" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-nav swiper-button-prev">
+                <i class="fas fa-long-arrow-alt-left"></i>
+              </div>
+
+              <div class="review-nav swiper-button-next ">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="column-2 image">
+            <img src="{% static 'img/testi.svg'%}" alt="" class="img-element" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
